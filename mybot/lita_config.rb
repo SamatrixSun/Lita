@@ -30,6 +30,10 @@ Lita.configure do |config|
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
   # config.adapter.password = "secret"
+  Lita.configure do |config|
+    config.robot.adapter = :slack
+    config.adapters.slack.token = "xoxb-1452819079319-1480191901169-N98zoQastmUsi52dRw01jK03"
+  end
 
   ## Example: Set options for the Redis connection.
   # config.redis.host = "127.0.0.1"
